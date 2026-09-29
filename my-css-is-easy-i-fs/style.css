@@ -1,0 +1,36 @@
+body {
+    margin: 0px !important;
+    font-family: Arial, sans-serif;
+}
+
+/* General section styling */
+.header, .hero, .content, .sidebar, .footer {
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Colors */
+.header { background-color: #00B7EB; }
+.hero { background-color: #FF0000; }
+.content { background-color: #00FF00; color: black; }
+.sidebar { background-color: #800080; }
+.footer { background-color: #444444; }
+
+/* Mobile layout (default) */
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Desktop layout */
+@media (min-width: 640px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .content, .sidebar {
+        flex: 1;
+    }
+}
